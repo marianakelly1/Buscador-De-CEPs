@@ -6,7 +6,7 @@ async function getCepInfo(){  /* async --- função assincrona(esperando uma res
     return;
    }
     /*await--- espera a função carregar completamente para seguir o codigo */
-   var reply = await fetch(`http://viacep.com.br/ws/${cep.value}/json/`); /* Funçao JS que cria requisição http para uma api --- usando templat e passando a variavel cep.value */
+   var reply = await fetch(`https://viacep.com.br/ws/${cep.value}/json/`); /* Funçao JS que cria requisição http para uma api --- usando templat e passando a variavel cep.value */
    var data = await reply.json(); /*Extraindo da resposta recebida o json desejado */
 
    if(data.erro){
